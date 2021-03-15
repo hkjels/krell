@@ -87,7 +87,7 @@ function bootstrapRepl() {
 function waitForCore(cb) {
     // we only care if goog/base.js is actually in the cache, that's enough
     // to bootstrap regardless whether some things must be refetched
-    if(KRELL_CACHE.ready &&
+    if(false &&
        KRELL_CACHE.has(toPath("goog/base.js")) &&
        KRELL_CACHE.has(toPath("goog/deps.js")) &&
        KRELL_CACHE.has(toPath("cljs_deps.js")) &&
